@@ -30,7 +30,7 @@ Ceci est un message automatique.
 
     # ➤ Envoi SMTP sécurisé (exemple avec Gmail)
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-        smtp.login(os.environ.get('EMAIL_SENDER'), os.environ.get('okow srsh aijt pvjx'))
+        smtp.login(os.environ.get('zounmenouorden@gmail.com'), os.environ.get('okow srsh aijt pvjx'))
         smtp.send_message(msg)
 
 @app.route('/success')
