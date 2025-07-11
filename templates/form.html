@@ -169,6 +169,16 @@
                 }
             });
         });
+
+        // Redirection après soumission du formulaire
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Vérifie la validité du formulaire
+            if (form.checkValidity()) {
+                window.location.href = 'success.html';
+            }
+        });
     });
 </script>
 
